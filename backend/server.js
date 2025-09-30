@@ -92,6 +92,13 @@ io.on("connection", (socket) => {
   });
 });
 
+<<<<<<< HEAD
 server.listen(5001, () => {
   console.log("🚀 Server running on http://localhost:5001");
+=======
+const PORT = process.env.PORT || 5001;
+
+server.listen(PORT, () => {
+  console.log(`🚀 Server running on port ${PORT}`);
+>>>>>>> 67f6fe3 ( add new change)
 });
