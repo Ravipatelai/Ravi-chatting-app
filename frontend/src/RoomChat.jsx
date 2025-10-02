@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import { motion } from "framer-motion";
 
-const socket = io("http://localhost:5001");
+const socket = io("http://localhost:5000");
 
 export default function RoomChat() {
   const [roomId, setRoomId] = useState("");
