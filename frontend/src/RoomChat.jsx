@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { io } from "socket.io-client";
 import { motion } from "framer-motion";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://backend-chat-ochre.vercel.app/");
 
 export default function RoomChat() {
   const [roomId, setRoomId] = useState("");
